@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+permalink: /blog/
 icon: octicon-book
 isNavItem: true
 styles : [article-list.css,style.css,category.css]
@@ -12,6 +13,7 @@ scripts: [category.js,]
       <div>
         <section class="category-slice" post-cate="All">
           {% for post in paginator.posts %}
+          {% for post in site.posts %}
             <article>
                 <header>
                     <a href="{{ site.baseurl | prepend: site.url  }}/cv/#{{ post.date | date: '%Y-%m-%d' }}"><span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span></a>
