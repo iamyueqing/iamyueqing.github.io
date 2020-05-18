@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 icon: octicon-link-external
 isNavItem: true
+styles : [style.css]
 ---
 
 ### [github](https://github.com/iamyueqing)
