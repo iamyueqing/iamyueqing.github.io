@@ -11,10 +11,6 @@ layout: default
             </p>
             <p class="post-tag">
                 <span>{% for cat in page.categories %}<a href="{{ '/category' | prepend: site.baseurl | prepend: site.url }}/#{{ cat }}"><span class="octicon octicon-list-unordered"></span>&nbsp;{{ cat }}</a>{% endfor %}</span>
-                <span>{% for tag in page.tags %}
-                    <a class="word-keep" href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}/#{{ tag }}"><span class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
-                    {% endfor %}
-                </span>
             </p>
           </header>
           <hr class="boundary">
@@ -32,9 +28,6 @@ layout: default
           </div>
         </div>
         <div class="pad-min"></div>
-        <div id="post-comment" class="sheet post hidden">
-            <div id="disqus_thread"></div>
-        </div>
     </div>
     <div class="content-navigation col-lg-3">
       <div class="shadow-bottom-center" >
@@ -43,20 +36,6 @@ layout: default
                 <span class="octicon octicon-list-unordered"></span>&nbsp;Toc
             </div>
             <div class="content-navigation-list toc"></div>
-        </div>
-        <div class="content-navigation-tag">
-            <div class="content-navigation-header">
-                <span class="octicon octicon-list-unordered"></span>&nbsp;Tags
-            </div>
-            <div class="content-navigation-list">
-                <ul>
-                    {% for tag in page.tags %}
-                    <li>
-                        <a href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}#{{ tag }}"><span class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
         </div>
         <div class="content-navigation-related">
             <div class="content-navigation-header">
