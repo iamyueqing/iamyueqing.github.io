@@ -49,12 +49,6 @@ layout: default
                         {%if p.url != page.url %}
                             {% assign commonTagCount = 0 %}
 
-                            {% for tag in p.tags %}
-                                {% if page.tags contains tag %}
-                                    {% assign commonTagCount = commonTagCount | plus: 1 %}
-                                {% endif %}
-                            {% endfor %}
-
                             {% for cat in p.categories %}
                                 {% if page.categories contains cat %}
                                     {% assign commonTagCount = commonTagCount | plus: 1 %}
