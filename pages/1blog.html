@@ -24,11 +24,6 @@ scripts: [category.js]
                         </a>
                         <p>{% if post.excerpt.size > 32 %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 160 }}{% endif %}</p>
                         <a class="readmore" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read More</a>
-                        <footer>
-                      <span class="word-keep pull-right">
-                          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#post-share"><span class="octicon octicon-file-symlink-file"></span>&nbsp;Share</a>
-                      </span>
-                        </footer>
                     </div>
                 </article>
                 {% endfor %}
