@@ -18,7 +18,7 @@ scripts: [category.js]
                 {% for post in site.posts %}
                 <article>
                     <header>
-                        <a href="{{ site.baseurl | prepend: site.url  }}/cv/#{{ post.date | date: '%Y-%m-%d' }}"><span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span></a>
+                        <span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span>
                     </header>
                     <div class="module">
                         <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
